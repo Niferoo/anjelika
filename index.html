@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Машина Любви</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="vignette"></div>
+<div class="bg-hearts" id="bgHearts"></div>
+
+<div class="container">
+  <h1 class="title">MACHINA AMORIS</h1>
+  <p class="subtitle">Машина, которая знает о любви всё</p>
+
+  <div class="machine" id="machine">
+    <div class="neon-glow"></div>
+
+    <div class="sign">
+      <span class="sign-text">LOVE</span>
+      <div class="sign-bulbs">
+        <span></span><span></span><span></span><span></span><span></span>
+      </div>
+    </div>
+
+    <div class="cabinet">
+      <div class="dome-wrapper">
+        <div class="dome-glow"></div>
+        <div class="glass-dome">
+          <div class="dome-shine"></div>
+          <div class="dome-inner">
+            <div class="balls-container" id="ballsContainer">
+              <div class="ball" data-idx="0" style="--i:0">❤️</div>
+              <div class="ball" data-idx="1" style="--i:1">💖</div>
+              <div class="ball" data-idx="2" style="--i:2">💗</div>
+              <div class="ball" data-idx="3" style="--i:3">💕</div>
+              <div class="ball" data-idx="4" style="--i:4">💘</div>
+              <div class="ball" data-idx="5" style="--i:5">💝</div>
+              <div class="ball" data-idx="6" style="--i:6">💞</div>
+              <div class="ball" data-idx="7" style="--i:7">🧡</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tube" id="tube">
+          <div class="ball-in-tube" id="ballInTube">💖</div>
+        </div>
+      </div>
+
+      <div class="right-panel">
+        <div class="panel-label">ДЁРНИ</div>
+        <div class="lever-slot" id="leverSlot">
+          <div class="lever-track"></div>
+          <div class="lever-handle" id="leverHandle">
+            <div class="handle-knob"></div>
+            <div class="handle-rod"></div>
+          </div>
+        </div>
+        <div class="panel-sub">ЗА РЫЧАГ</div>
+      </div>
+    </div>
+
+    <div class="front-panel">
+      <div class="panel-window">
+        <div class="window-text" id="windowText">💖</div>
+        <div class="window-scroll" id="windowScroll">— LOVE —</div>
+      </div>
+      <div class="panel-lights">
+        <span></span><span></span><span></span><span></span>
+      </div>
+    </div>
+
+    <div class="legs">
+      <div class="leg"></div>
+      <div class="leg"></div>
+    </div>
+
+    <div class="result-overlay hidden" id="resultOverlay">
+      <div class="result-card" id="resultCard">
+        <div class="result-emoji" id="resultEmoji">💖</div>
+        <div class="result-badge" id="resultBadge"></div>
+        <div class="result-text" id="resultText">Я тебя люблю</div>
+        <div class="result-note" id="resultNote"></div>
+        <img class="result-img hidden" id="resultImg" alt="photo">
+        <div class="card-actions">
+          <button class="share-btn" id="shareBtn">Поделиться</button>
+        </div>
+        <button class="close-btn" id="closeBtn">✕</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="stats-bar">
+    <div class="stat">
+      <span class="stat-icon">🎰</span>
+      <span class="stat-num" id="pullCount">0</span>
+      <span class="stat-label">дёрганий</span>
+    </div>
+    <div class="stat">
+      <span class="stat-icon">💎</span>
+      <span class="stat-num" id="goldenCount">0</span>
+      <span class="stat-label">золотых</span>
+    </div>
+    <div class="stat">
+      <span class="stat-icon">📜</span>
+      <span class="stat-num" id="historyCount">0</span>
+      <span class="stat-label">записок</span>
+    </div>
+  </div>
+
+  <div class="history-toggle" id="historyToggle">
+    <span>📖 История</span>
+    <span class="toggle-arrow">▼</span>
+  </div>
+  <div class="history-panel hidden" id="historyPanel">
+    <div class="history-list" id="historyList"></div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
